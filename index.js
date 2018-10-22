@@ -3,6 +3,7 @@ const app = express();
 const port = 3000;
 
 app.get('/', (req, res) => {
+  console.log({message: 'Hello from Express'});
   res.send('Hello World for Stackdriver Logging!');
 });
 
