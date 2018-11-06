@@ -49,6 +49,7 @@ app.get("/crash2", (req, res) => {
 
 app.get("/", (req, res) => {
 	console.log({ message: "Hello from Express" });
+	counter++;
 	let random = Math.random();
 	let luckyNumber = Math.floor(random*100); // Scale to 100. 
 	res.send("Hello World for Stackdriver Debugger! You are visitor number " + counter + " and your lucky number is " + luckyNumber + ".");
