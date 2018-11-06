@@ -1,4 +1,4 @@
-require('@google-cloud/debug-agent').start();
+require('@google-cloud/debug-agent').start({ allowExpressions: true });
 
 const express = require("express");
 const app = express();
