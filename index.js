@@ -8,19 +8,19 @@ const port = process.env.PORT || 8080;
 let counter = 0;
 
 app.get("/error", (req, res) => {
-	console.log("Hit the endpoint that throw and error.");
+	console.log("Hit the endpoint that throws an error.");
 	res.send("This threw an error");
 	throw new Error("Throw an error");
 });
 
 app.get("/error1", (req, res) => {
-	console.log("Hit the endpoint that throw and error.");
+	console.log("Hit the endpoint that throws an error.");
 	res.send("This threw an error");
 	throw new Error("Throw an error #1");
 });
 
 app.get("/error2", (req, res) => {
-	console.log("Hit the endpoint that throw and error.");
+	console.log("Hit the endpoint that throws an error.");
 	res.send("This threw an error");
 	throw new Error("Throw an error #2");
 });
