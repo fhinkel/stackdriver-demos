@@ -44,10 +44,10 @@ app.get('/crash2', (req, res) => {
   }, 5);
 });
 
-// app.get('/', (req, res) => {
-//   console.log({ message: 'Hello from Express' });
-//   res.send('Hello World for Stackdriver Monitoring!');
-// });
+app.get('/', (req, res) => {
+  console.log({ message: 'Hello from Express' });
+  res.send('Hello World for Stackdriver Monitoring!');
+});
 
 app.listen(port, () =>
   console.log(`Example app listening on port ${port}!`)
