@@ -46,7 +46,7 @@ app.get('/crash2', (req, res) => {
 
 app.get('/', (req, res) => {
   console.log({ message: 'Hello from Express' });
-  res.send('Hello World for Stackdriver Error Reporting!');
+  res.send('Hello World for Stackdriver Monitoring!');
 });
 
 app.listen(port, () =>
