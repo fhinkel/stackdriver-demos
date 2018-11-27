@@ -44,6 +44,12 @@ app.get('/crash2', (req, res) => {
   }, 5);
 });
 
+app.get('/404', (req, res) => {
+  console.log('Hit the 404 endpoint.');
+  res.status(404).send('No no no.');
+});
+
+
 app.get('/', (req, res) => {
   console.log({ message: 'Hello from Express' });
   res.send('Hello World for Stackdriver Monitoring!');
